@@ -1,6 +1,7 @@
-re
+USE codeup_test_db;
 -- INSERT INTO albums(artist)
 -- VALUES ('Michael Jackson'),('AC/DC'),('Pink Floyd'),('Meat Loaf');
+TRUNCATE albums;
 
 INSERT INTO albums(artist,album_name,release_date, genre,sales)
 VALUES ('Michael Jackson', 'Thriller', 1982, 'Pop, Rock, R&B', 47.3),
