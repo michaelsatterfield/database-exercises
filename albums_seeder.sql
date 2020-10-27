@@ -1,4 +1,4 @@
-USE codeup_test_db;
+re
 -- INSERT INTO albums(artist)
 -- VALUES ('Michael Jackson'),('AC/DC'),('Pink Floyd'),('Meat Loaf');
 
