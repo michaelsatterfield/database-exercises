@@ -49,3 +49,13 @@ FROM employees as e
 WHERE dm.to_date = '9999-01-01'
 and s.to_date = '9999-01-01'
 ORDER BY dept_name;
+
+# *********SUB QUERIES************
+# Find all the current department managers that are female.
+
+SELECT emp_no, concat(first_name, ' ', last_name) as name,gender
+from employees
+where emp_no IN (SELECT emp_no
+                 from dept_manager
+                 where to_date = '9999-01-01')
+  AND  gender = 'F';
