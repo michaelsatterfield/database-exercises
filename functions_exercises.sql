@@ -16,49 +16,20 @@ ORDER BY  birth_date, hire_date DESC;
 
 
 
+# examples of functions mysql
+
+SELECT curdate();
+SELECT CURRENT_TIME AS 'local time';
 
 
-SELECT *
-FROM employees
-WHERE first_name IN ('Irena', 'Vidya', 'Maya')
-ORDER BY last_name DESC , first_name desc;
+select unix_timestamp() - unix_timestamp('2020-07-20 09:00:00')AS 'Time in class';
 
+select ceiling(505.505);
+select  floor (505.505);
+select round(505.505);
 
+select pi();
 
-
-
-SELECT *
-FROM employees
-WHERE hire_date BETWEEN 1990-01-01 AND 2000-01-01;
-
-SELECT *
-FROM employees
-WHERE birth_date LIKE '%12-25%';
-
-SELECT *
-FROM employees
-WHERE last_name LIKE '%q';
-
-SELECT *
-FROM employees
-WHERE first_name IN ('Irena')
- OR ('Vidya')
- OR( 'Maya');
-
-
- SELECT *
-FROM employees
-WHERE gender = 'M'
-ANd first_name IN ('Irena')
- OR ('Vidya')
- OR( 'Maya');
-
-SELECT *
-FROM employees
-WHERE last_name LIKE 'e%'
-OR last_name LIKE '%e';
-
-SELECT *
-FROM employees
-WHERE last_name LIKE 'e%'
-AND last_name LIKE '%e';
+select avg(salary) as 'SALARY AVERAGE'
+from salaries
+where to_date = '9999-01-01';
