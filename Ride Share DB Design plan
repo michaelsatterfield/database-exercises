@@ -1,0 +1,88 @@
+UBER
+======
+VISITOR
+// user stories
+As a visitor, i want to see a registration form 
+As a visitor, i want to see if i can be a driver/passenger
+As a visitor, i want to see all services/features offered 
+As a visitor, easy access to information high-level and on the deep
+As a visitor, i want to see a login page 
+
+FEATURES:
+-registration to make an account for anybody
+-log in form
+-log out listener
+-registration form for DRIVERS
+-registration form for PASSENGERS
+
+
+LET'S SAY THE VISITOR SIGNED UP ON ONE OF THESE:
+ DRIVER
+ // user stories
+ As a driver, display a map where I can see passengers that needs a ride
+ As a driver, i want the app to display how much $$ i'll get relative to distance traveled
+ As a driver, boost pay for large events in the city
+ As a driver, events notification
+ As a driver, i want to be able to review the passenger
+ As a driver, i want to see how far i've driven
+ As a driver, i want to see my stats
+
+ FEATURES:
+ - UPON LOGIN ON PROFILE PAGE dashboard 
+ 		- report of rides, 
+ 		- reviews(presented as star), 
+ 		- total $$ EARNED, distance traveled (STATS dashboard), 
+ 		- history info (back-end)
+ 
+ - Allow drivers to receive notifications trip request: 
+ 		-Pop model -> timer (20 secs)
+ 		- Tap to accept
+ - Confirmation -> IF YES:
+ 
+ - NEW PAGE 
+	- Display passenger data: first_name, destination, ma
+	- Accurate re-render of maps as driver is approaching closer (dictate timeout)
+	- Messaging passengers when getting closer
+	    - Contact Button
+ 
+ - END OF TRIP 
+ 	- Review the passenger
+	- Tip option: %	
+
+PASSENGER
+// user stories
+As a passenger, i want to be able to input my destination
+As a passenger, i want to be able pick type of vehicle: SUV, sedan etc
+As a passenger, i want to see display map where i can easily see drivers available in my area
+As a passenger, i want to be see estimated time arrivaldrivers <-> passenger <-> drivers
+As a passenger, i want to be able to see estimated COST of my trip
+As a passenger, i want to see the CHEAPEST rates, first
+As a passenger, i want to be able to write a review for my driver and view my reviews
+As a passenger, i want to make sure I'm safe with driver
+
+FEATURES:
+- UPON LOGIN ON PROFILE PAGE: 
+	- DASHBOARD:
+		- report of rides, 
+		- reviews(presented as star), 
+		- total $$ SPENT
+
+- PROFILE PAGE
+   - Destination address input form
+   - call google maps api to display directions
+   - display fee, calculated based on local area rates: Geolocation
+   - select service(luxury, economy, party bus etc...) and vehicle type(suv,  truck, sedan etc...)
+   -confirmation of the trip(are you sure you want to....) if YES:
+
+- NEW PAGE 
+	- Status page: map of location, driver, and current driver and passenger (goole maps api)
+	- Accurate re-render of maps as driver is approaching closer (dictate timeout)
+	- Messaging drivers via text or phone number
+
+- END OF TRIP
+	- Review the driver
+	- Tip option: %	 
+
+
+FEATURE NICE TO HAVE:
+- Contact Button from Driver to Passenger and vice versa where both contact info are not exposed
